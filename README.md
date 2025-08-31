@@ -7,7 +7,7 @@
 
 A comprehensive, modular, and scalable sign language recognition system that converts sign language gestures to text in real-time. Built with a **laptop-first, cloud-ready** architecture that scales from prototype to production.
 
-## 🎯 Key Features
+##  Key Features
 
 ### **Core Capabilities**
 - **Real-time Sign Recognition** - Live gesture-to-text conversion with <50ms latency
@@ -15,29 +15,29 @@ A comprehensive, modular, and scalable sign language recognition system that con
 - **CNN+LSTM Architecture** - Optimized spatiotemporal modeling for laptop deployment
 - **Hardware-Aware Training** - Automatically optimized for your specific hardware setup
 
-### **Advanced Optimization** 🔧
+### **Advanced Optimization** 
 - **Model Quantization** - INT8/FP16 quantization for faster inference
 - **Knowledge Distillation** - Transfer learning from large teacher models
 - **Structured Pruning** - Reduce model size while maintaining accuracy
 - **Mixed Precision Training** - Memory-efficient training on modern hardware
 
-### **Research-Ready** 🔬
+### **Research-Ready** 
 - **Transformer Architecture** - State-of-the-art sequence modeling (future scaling)
 - **Neural Architecture Search** - Automated model discovery and optimization
 - **Ablation Study Framework** - Systematic component importance analysis
 - **Continual Learning** - Add new signs without catastrophic forgetting
 
-### **Production Deployment** 🚀
+### **Production Deployment** 
 - **Multi-Format Export** - ONNX, TensorFlow Lite, TorchScript, CoreML support
 - **Cross-Platform** - Laptop → Mobile → Edge → Cloud deployment pipeline
 - **Performance Monitoring** - Real-time latency and accuracy tracking
 - **Batch Processing** - Efficient processing of video datasets
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ```
-📁 sign-language-recognition/
-├── 🎯 sign_language/           # Core package
+sign-language-recognition/
+├──  sign_language/           # Core package
 │   ├── features/               # Multimodal feature extraction
 │   │   ├── body_parts/         # Hand, face, pose processing
 │   │   ├── temporal/           # Sequence & motion features
@@ -52,13 +52,13 @@ A comprehensive, modular, and scalable sign language recognition system that con
 │   │   ├── optimizations/      # CPU/GPU specific optimizations
 │   │   └── postprocessing/     # Smoothing, sequence decoding
 │   └── deployment/             # Multi-target deployment
-├── 📊 configs/                 # Hardware & model configurations
-├── 🔬 experiments/             # Research experiments & ablations
-├── 📈 data/                    # Dataset storage & processing
-└── 🎛️ models/                  # Trained model artifacts
+├──  configs/                 # Hardware & model configurations
+├──  experiments/             # Research experiments & ablations
+├──  data/                    # Dataset storage & processing
+└──  models/                  # Trained model artifacts
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -112,15 +112,15 @@ for prediction in predictor.stream():
     print(f"Detected sign: {prediction.text} (confidence: {prediction.confidence:.2f})")
 ```
 
-## 📊 Performance Benchmarks
+## Performance Benchmarks
 
 ### **Hardware Requirements**
 
 | Configuration | Training Time* | Inference Speed | Memory Usage |
 |---------------|----------------|-----------------|--------------|
-| **Laptop (i5, 16GB)** 🎯 | ~2 hours | 45ms per frame | ~4GB RAM |
+| **Laptop (i5, 16GB)**  | ~2 hours | 45ms per frame | ~4GB RAM |
 | **Laptop + GPU** | ~45 minutes | 15ms per frame | ~6GB RAM |
-| **Cloud (V100)** 🚀 | ~20 minutes | 5ms per frame | ~12GB VRAM |
+| **Cloud (V100)**  | ~20 minutes | 5ms per frame | ~12GB VRAM |
 
 *For 5-class baseline with 1K training samples
 
@@ -128,9 +128,9 @@ for prediction in predictor.stream():
 
 | Model | Accuracy | Size | Inference (CPU) | Inference (GPU) |
 |-------|----------|------|-----------------|-----------------|
-| **CNN+LSTM Baseline** 🎯 | 94.2% | 12MB | 45ms | 15ms |
+| **CNN+LSTM Baseline**  | 94.2% | 12MB | 45ms | 15ms |
 | **Quantized CNN+LSTM** | 93.8% | 3MB | 28ms | 12ms |
-| **Transformer (Future)** 🚀 | 97.1% | 45MB | 120ms | 25ms |
+| **Transformer (Future)** | 97.1% | 45MB | 120ms | 25ms |
 
 ## 🔧 Advanced Features
 
@@ -173,7 +173,7 @@ sl-deploy --target laptop --model optimized.onnx --monitor --serve-port 8080
 sl-deploy --targets laptop,mobile,edge --model best.pth --optimize-each
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 <details>
 <summary>Click to expand detailed structure</summary>
@@ -197,8 +197,8 @@ sign-language-recognition/
 │   │   └── augmentation/             # Feature augmentation
 │   ├── models/                       # Neural architectures
 │   │   ├── architectures/
-│   │   │   ├── cnn_lstm.py           # 🎯 Baseline model
-│   │   │   ├── transformer.py        # 🚀 Advanced model
+│   │   │   ├── cnn_lstm.py           #  Baseline model
+│   │   │   ├── transformer.py        #  Advanced model
 │   │   │   └── hybrid.py
 │   │   ├── components/               # Reusable components
 │   │   └── optimization/             # Model optimization
@@ -225,8 +225,8 @@ sign-language-recognition/
 │   └── utils/                        # Utilities
 ├── configs/                          # Configurations
 │   ├── hardware/                     # Hardware-specific configs
-│   │   ├── laptop_i5_16gb.yaml       # 🎯 Your setup
-│   │   └── cloud_gpu.yaml            # 🚀 Future scaling
+│   │   ├── laptop_i5_16gb.yaml       #  Your setup
+│   │   └── cloud_gpu.yaml            #  Future scaling
 │   ├── models/                       # Model architectures
 │   ├── training/                     # Training configurations
 │   └── experiments/                  # Experiment setups
@@ -247,7 +247,7 @@ sign-language-recognition/
 ```
 </details>
 
-## 🎯 Development Roadmap
+##  Development Roadmap
 
 ### **Phase 1: MVP (Current Focus)**
 - [x] Project structure and CLI interface
@@ -278,7 +278,7 @@ sign-language-recognition/
 - [ ] Multi-language sign support
 - [ ] Enterprise deployment tools
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
@@ -305,13 +305,13 @@ mypy sign_language/
 
 ### **Areas We Need Help**
 
-- 🎯 **Model Optimization** - Quantization, pruning, distillation techniques
-- 📊 **Evaluation Metrics** - Sign language specific evaluation protocols  
-- 🚀 **Advanced Architectures** - Transformer variants, multimodal fusion
-- 📱 **Mobile Deployment** - TensorFlow Lite optimization, mobile inference
-- 🔬 **Research Features** - Continual learning, few-shot adaptation
+-  **Model Optimization** - Quantization, pruning, distillation techniques
+-  **Evaluation Metrics** - Sign language specific evaluation protocols  
+-  **Advanced Architectures** - Transformer variants, multimodal fusion
+-  **Mobile Deployment** - TensorFlow Lite optimization, mobile inference
+-  **Research Features** - Continual learning, few-shot adaptation
 
-## 📚 Documentation
+##  Documentation
 
 - **[Training Guide](docs/training.md)** - Comprehensive training documentation
 - **[API Reference](docs/api.md)** - Complete API documentation  
@@ -319,18 +319,18 @@ mypy sign_language/
 - **[Research Guide](docs/research.md)** - Advanced research features
 - **[Hardware Optimization](docs/hardware.md)** - Hardware-specific optimization
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **MediaPipe** team for excellent pose estimation
 - **PyTorch** community for the deep learning framework
 - **Sign language community** for guidance and feedback
 - **Open source contributors** who make this project possible
 
-## 📞 Contact
+##  Contact
 
 - **Project Lead**: Your Name ([wency.org@gmail.com](mailto:your.email@example.com))
 - **GitHub Issues**: [Report bugs or request features](git clone https://github.com/De3f4ault/sign-language-recognition.git/issues)
@@ -338,7 +338,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**🚀 Ready to get started? Try the quick setup:**
+** Ready to get started? Try the quick setup:**
 
 ```bash
 pip install sign-language-recognition
